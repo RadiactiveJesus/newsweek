@@ -44,12 +44,92 @@
     width: 100%;
 }
 #Nietzsche {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
 }
 #Ideas {
     height: 400px;
 }
 .font-weight-bold {
     font-size: 18px;
+}
+.d-flex.flex-row h1 {
+    font-size: 14px;
+}
+.d-flex.flex-row.align-items-center div p {
+    font-size: 10px;
+    font-family: "Roboto Condensed",sans-serif;
+    color: rgb(85, 85, 85);
+}
+.d-flex.flex-row.align-items-center {
+    height: 70px;
+}
+.text-muted {
+    font-size: 14px;
+    font-weight: 700;
+}
+.row.pt-3 div p {
+    font-size: 14px;
+}
+.row.pt-3 div h2 {
+    font-size: 16px;
+}
+.col-md-6.col-lg-6.col-sm-6.text-left div img {
+    height: 90px;
+    width: 134px;
+}
+.d-flex.flex-row.align-items-center.shakespeare {
+    height: 100px;
+}
+.d-flex.flex-row.align-items-center .kant h1{
+    font-size: 16px;
+    font-family: "Roboto Condensed",sans-serif;
+}
+.d-flex.flex-row.align-items-center .kant p{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.d-flex.flex-row.align-items-center.pb-3.pt-3 {
+    height: 100px;
+}
+.d-flex.flex-row.align-items-center img {
+    height: 90px;
+    width: 134px;
+}
+.card {
+    background-color: rgb(244, 245, 246);
+}
+.card.mt-5 {
+    border-radius: 0px;
+}
+.inline span {
+    background-color: red;
+    font-weight: bolder;
+    padding: 2px 5px 6px 5px;
+    margin-top: 6px;
+    margin-right: 7px;
+    height: 25px;
+}
+/*.inline h5::before {
+    content: "N";
+    color: white;
+    background-color: red;
+    font-weight: bolder;
+    padding: 5px 5px 3px 5px;
+    margin-right: 2px;
+} */
+.btn.text-white {
+    background-color: rgb(102, 102, 102);
+    border-radius: 0px;
+}
+.card-body a {
+    font-size: 14px;
+}
+.card-title {
+    font-size: 16px;
+    font-family: "Roboto Condensed",sans-serif;
+}
+.inline {
+    display: flex;
+    flex-direction: row;
 }
