@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 .col-md-4.col-lg-4.col-sm-4.text-center img {
-    width: 400px;
     height: 90px;
 }
 .row.nav-bar.text-white{
@@ -41,7 +40,6 @@
 }
 .row.pt-3 div img {
     height: 210px;
-    width: 100%;
 }
 #Nietzsche {
     width: 70px;
@@ -110,14 +108,6 @@
     margin-right: 7px;
     height: 25px;
 }
-/*.inline h5::before {
-    content: "N";
-    color: white;
-    background-color: red;
-    font-weight: bolder;
-    padding: 5px 5px 3px 5px;
-    margin-right: 2px;
-} */
 .btn.text-white {
     background-color: rgb(102, 102, 102);
     border-radius: 0px;
@@ -132,4 +122,19 @@
 .inline {
     display: flex;
     flex-direction: row;
+}
+.container-fluid {
+    width: 95%;
+}
+.d-flex.flex-row.justify-content-center span{
+    background-color: red;
+    font-weight: bolder;
+    margin-right: 7px;
+    height: 25px;
+}
+.col-md-8.col-lg-8.col-sm-8 {
+    width: 80%;
+}
+.col-sm.col-md.col-lg img {
+    height: 250px;
 }
