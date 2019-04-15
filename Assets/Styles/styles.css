@@ -3,6 +3,9 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+body {
+    font-family: "Roboto Condensed",sans-serif;
+}
 .col-md-4.col-lg-4.col-sm-4.text-center img {
     height: 90px;
 }
@@ -169,4 +172,36 @@
 }
 .font-weight-bold.pt-2.U-S {
     color: #f72210;
+}
+.font-weight-bold.pt-2.subscribe{
+    color: #f72210;
+    font-size: 12px;
+}
+.card.second {
+    border: 0px;
+    border-radius: 0px;
+    width: 100%;
+}
+.d-flex.flex-row.card-second img{
+    height: 115px;
+    width: 40%;
+}
+#card-2 {
+    height: 165px;
+}
+.inline i {
+    color: #999;
+}
+.inline p {
+    font-size: 15px;
+}
+.col-sm.col-md.col-lg.third h1 {
+    font-size: 14px;
+}
+.d-flex.flex-row.align-items-center.shakespeare-2 img {
+    height: 60px;
+    width: 120px;
+}
+.btn.bg.text-white.rounded-0 {
+    background-color: red;
 }
