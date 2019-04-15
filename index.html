@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/Styles/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Newsweek</title>
@@ -15,10 +15,11 @@
             <div class="page-header">
                 <div class="row nav-bar text-white">
                     <div class="col-md-4 col-lg-4 col-sm-4 text-left header-item">
-                        <p>Wed, Apr 10, 2019</p>
+                        <p id="date">Wed, Apr 10, 2019</p>
+                        <a id="hidden" href="#"><img class="hidden img-fluid max-width: 80%" src="Assets/Images/Newsweek-Logo.png" alt="NW-logo"></a>
                     </div><!--end of column-->
                     <div class="col-md-4 col-lg-4 col-sm-4 text-center">
-                        <a href="#"><img class="img-fluid max-width: 100%" src="Assets/Images/Newsweek-Logo.png" alt="NW-logo"></a>
+                        <a href="#"><img id="static" class="img-fluid max-width: 100%" src="Assets/Images/Newsweek-Logo.png" alt="NW-logo"></a>
                     </div><!--end of column-->
                     <div class="col-md-4 col-lg-4 col-sm-4 text-right header-item right">
                         <a class="text-light text-decoration-none" href="#"><p>SIGN IN <button type="button" class="btn bg-white text-danger rounded-0">SUBSCRIBE<i class="fas fa-chevron-right"></i></button></p></a>
@@ -58,7 +59,7 @@
                 </ul>
             </div>
             <div class="row pt-3">
-                <div class="col-md-3 col-lg-3 col-sm-3 text-left">
+                <div class="col-md-6 col-lg-6 col-sm-6 text-left">
                     <p class="text-muted">FEATURED STORIES</p>
                     <img class="img-fluid max-width: 100%" src="Assets/Images/socrates.jpg" alt="Socrates">
                     <h1 class="font-weight-bold pt-2">Socrates debating with Thrasymachus about the defnition of justice</h1>
@@ -160,7 +161,7 @@
                     </div><!--end of Kant-->
                     <hr>
                 </div><!--end of column-->
-                <div class="col-md-3 col-lg-3 col-sm-3 text-left">
+                <div class="col-md-0 col-lg-3 col-sm-0 text-left">
                     <p class="text-muted">OPINION</p>
                     <div class="d-flex flex-row align-items-center">
                         <img class="img-fluid max-width: 100% rounded-circle" id="Nietzsche"  src="Assets/Images/Nietzsche.gif" alt="Nietzsche">
@@ -265,7 +266,7 @@
                             <h1 class="font-weight-bold">I'll join with black despair against my soul, and to myself become an enemy.</h1>
                         </div>
                     </div><!--end of Shakespeare-->
-                    <div class="card mt-5 rounded-0" style="width: 18rem;">
+                    <div id="card-1" class="card mt-5 rounded-0 max width: 100%;" style="width: 100%;">
                         <div class="card-body">
                             <div class="d-flex flex-row">
                                 <img id="n-icon" class="mt-1 mr-2" src="https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/logo-n1.svg" alt="n-icon">
@@ -274,7 +275,7 @@
                             <button type="button" class="btn text-white rounded-0 mb-2 mr-2 font-weight-bold">SIGN UP<i class="fas fa-chevron-right"></i></button><br>
                             <a href="#" class="font-weight-bold text-dark">Update your preferences »</a>
                         </div>
-                        </div>
+                    </div>
                 </div><!--end of column-->
             </div><!--end of row pt-3-->
             <div class="row">
@@ -694,7 +695,7 @@
                                         <p class="card-text second"><i class="fas fa-check mx-2"></i>Website access</p>
                                     </div><!--end of inline-->
                                 </div>
-                                <button type="button" class="btn bg text-white rounded-0">SUBSCRIBE<i class="fas fa-chevron-right"></i></button>
+                                <button type="button" class="btn bg text-white rounded-0 last">SUBSCRIBE<i class="fas fa-chevron-right"></i></button>
                             </div><!--end of card-body-->
                         </div><!--end of card-->
                     </div><!--end of column-->
@@ -740,9 +741,102 @@
                 </div><!--end of row-->
             </div><!--end of container-->
             <hr>
+            <div class="d-flex flex-row align-items-center footer justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/newsweek.jpg" alt="Newsweek logo">
+                    <p class="mt-4 pt-2 ml-3">© 2019 NEWSWEEK</p>
+                </div>
+                <div class="d-flex flex-row align-items-center footer">
+                    <i class="fab fa-facebook-square mx-2"></i>
+                    <i class="fab fa-twitter mx-2"></i>
+                    <i class="fab fa-google-plus-g mx-2"></i>
+                    <i class="fab fa-instagram mx-2"></i>
+                    <i class="fab fa-tumblr mx-2"></i>
+                    <i class="fab fa-linkedin-in mx-2"></i>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 d-flex flex-row align-items-center font-weight-light text-center max-width: 100%">
+                        <div class="d-flex flex-row align-items-center font-weight-light text-center max-width: 100%">
+                            <a class="nav-link text-dark border-right" href="#">About Us</a>
+                            <a class="nav-link text-dark border-right" href="#">Corrections</a>
+                            <a class="nav-link text-dark border-right" href="#">Contact Us</a>
+                            <a id="editorial" class="nav-link text-dark border-right" href="#">Editorial Guidelines</a>
+                        </div>
+                        <div class="d-flex flex-row align-items-center font-weight-light text-center max-width: 100%">
+                            <a class="nav-link text-dark border-right" href="#">Advertise</a>
+                            <a class="nav-link text-dark border-right" href="#">Copyright</a>
+                            <a id="bigger" class="nav-link text-dark border-right" href="#">Terms & Conditions</a>
+                         </div>
+                    </div>
+                    <div class="col-sm-4 d-flex flex-row align-items-center font-weight-light text-center pt-3 max-width: 100%">
+                        <p class="font-weight-bold text-muted">Editions:</p>
+                        <a class="nav-link text-dark border-right mb-4 mx-2 pr-3" href="#">U.S. Edition</a>
+                        <a class="nav-link text-dark border-right mb-4 mx-2 pr-3" href="#">Middle East</a>
+                        <a class="nav-link text-dark border-right mb-4 mx-2 pr-3" href="#">日本</a>
+                        <a class="nav-link text-dark border-right mb-4 mx-2 pr-3" href="#">한국</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 d-flex flex-row align-items-center font-weight-light text-center last-footer max-width: 100%">
+                        <a class="nav-link text-dark border-right" href="#">Privacy Policy</a>
+                        <a class="nav-link text-dark border-right" href="#">Cookie Policy</a>
+                        <a class="nav-link text-dark border-right" href="#">Terms of Sale</a>
+                        <a id="smaller" class="nav-link text-dark border-right" href="#">Archive</a>
+                        <a id="bigger" class="nav-link text-dark border-right" href="#">Announcements</a>
+                        <a id="biggest" class="nav-link text-dark border-right" href="#">Consent preferences</a>
+                    </div>
+                    <div class="col-sm-4 d-flex flex-row align-items-center font-weight-light text-center last-footer pt-3 max-width: 100%">
+                        <a class="nav-link text-dark border-right mb-4 mx-2 pr-3" href="#">Pakistan</a>
+                        <a class="nav-link text-dark border-right mb-4 mx-2 pr-3" href="#">Polska</a>
+                        <a class="nav-link text-dark border-right mb-4 mx-2 pr-3" href="#">România</a>
+                    </div>
+                </div>
+            </div>
         </div><!--end of container-->
+        <style>
+            @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) { 
+                .nav.nav-pills.nav-fill.font-weight-bold.border-bottom {
+                    display: none;
+                }
+                #date {
+                    display: none;
+                }
+                #hidden {
+                    display: inline;
+                    max-height: 80%;
+                }
+                #static {
+                    display: none;
+                }
+                .row.nav-bar.text-white {
+                    height: 60px;
+                    position: sticky;
+                }
+                .col-md-4.col-lg-4.col-sm-4.text-right.header-item p{
+                    margin-top: 10px;
+                    height: 40px;
+                    font-size: 14px;
+                }
+                #card-1 {
+                   display: flex;
+                   justify-content: center;
+                   max-width: 50%;
+                   margin-left: 230px;
+                   margin-bottom: 30px;
+                }
+                .col-sm-8.d-flex.flex-row.align-items-center.font-weight-light.text-center{
+                    display: block;
+                }
+            }  
+
+        </style>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="Assets/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>

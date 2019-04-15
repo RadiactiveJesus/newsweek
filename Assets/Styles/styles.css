@@ -5,9 +5,13 @@
 }
 body {
     font-family: "Roboto Condensed",sans-serif;
+    font-size: 2vw;
 }
-.col-md-4.col-lg-4.col-sm-4.text-center img {
+#static{
     height: 90px;
+}
+.hidden.img-fluid {
+    height: 60px;;
 }
 .row.nav-bar.text-white{
     background-color: red;
@@ -78,6 +82,7 @@ body {
 }
 .d-flex.flex-row.align-items-center.shakespeare {
     height: 100px;
+    width: 100%;
 }
 .d-flex.flex-row.align-items-center .kant h1{
     font-size: 16px;
@@ -204,4 +209,51 @@ body {
 }
 .btn.bg.text-white.rounded-0 {
     background-color: red;
+}
+.col-sm-8.d-flex.flex-row.align-items-center a {
+    font-size: 12px;
+    width: 90px;
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+    height: 15px;
+}
+.col-sm-4.d-flex.flex-row.align-items-center a {
+    font-size: 12px;
+    width: 100%;
+    height: 15px;
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+}
+.col-sm-4.d-flex.flex-row.align-items-center {
+    white-space: nowrap;
+}
+.col-sm-8.d-flex.flex-row.align-items-center {
+    white-space: nowrap;
+}
+.col-sm-4.d-flex.flex-row.align-items-center p {
+    font-size: 12px,
+}
+#editorial {
+    width: 130px;
+}
+#bigger {
+    width: 130px;
+}
+.col-sm-8.d-flex.flex-row.align-items-center.font-weight-light.text-center.pb-3.last-footer a{
+    width: 100px;
+}
+#smaller {
+    width: 74px;
+}
+#biggest {
+    width: 150px;
+}
+.btn.bg.text-white.rounded-0.last {
+    margin-left: 90px;
+    margin-top: 20px
+}
+#hidden {
+    display: none;
 }
