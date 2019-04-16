@@ -7,27 +7,43 @@ body {
     font-family: "Roboto Condensed",sans-serif;
     font-size: 2vw;
 }
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #f72210;
+    color: black;
+    cursor: pointer;
+}
 #static{
     height: 90px;
 }
 .hidden.img-fluid {
     height: 60px;;
 }
-.row.nav-bar.text-white{
+.page-header {
     background-color: red;
+    z-index: 2;
+}
+.row.nav-bar.text-white{
     height: 90px;
 }
-.col-md-4.col-lg-4.col-sm-4.text-left.header-item p{
+.nav.nav-pills.nav-fill.font-weight-bold.border-bottom {
+    background-color: white;
+}
+.col-md-4.col-lg-4.col-sm-6.text-left.header-item p{
     margin-top: 40px;
     font-family: "Roboto Condensed",sans-serif;
     font-size: 16px;
 }
-.col-md-4.col-lg-4.col-sm-4.text-right.header-item p{
+.col-md-4.col-lg-4.col-sm-6.text-right.header-item p{
     margin-top: 30px;
     font-weight: bold;
     font-family: "Roboto Condensed",sans-serif;
 }
-.col-md-4.col-lg-4.col-sm-4.text-right.header-item i {
+.col-md-4.col-lg-4.col-sm-6.text-right.header-item i {
     padding-left: 5px;
 }
 .nav.nav-pills.nav-fill.font-weight-bold {
