@@ -90,7 +90,7 @@ body {
 }
 .d-flex.flex-row.align-items-center .kant p{
     font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto Condensed",sans-serif;
 }
 .d-flex.flex-row.align-items-center.pb-3.pt-3 {
     height: 100px;
