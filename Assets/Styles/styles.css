@@ -38,10 +38,19 @@ a:hover {
     font-family: "Roboto Condensed",sans-serif;
     font-size: 16px;
 }
-.col-md-4.col-lg-4.col-sm-6.text-right.header-item p{
+.col-md-4.col-lg-4.col-sm-6.text-right.header-item {
     margin-top: 30px;
-    font-weight: bold;
     font-family: "Roboto Condensed",sans-serif;
+    font-size: 18px;
+}
+.col-sm-3.col-md-3.col-lg-3.magazine {
+    width: 100%;
+}
+.col-sm-4.col-md-4.col-lg-4.magazine {
+    width: 100%;
+}
+.col-md-3.col-lg-3.col-sm-3.magazine {
+    width: 100%;
 }
 .col-md-4.col-lg-4.col-sm-6.text-right.header-item i {
     padding-left: 5px;
@@ -51,7 +60,7 @@ a:hover {
     height: 45px;
     width: 100%;
 }
-.nav-link.text-dark {
+.text-dark-border-right {
     width: 100%;
 }
 .col-md-4.col-lg-4.col-sm-4.text-left{
@@ -61,7 +70,7 @@ a:hover {
 .row.pt-3 div img {
     height: 210px;
 }
-#Nietzsche {
+.d-flex.flex-row.align-items-center.nietzsche img {
     width: 70px;
     height: 70px;
 }
@@ -179,10 +188,10 @@ a:hover {
     height: 29px;
     width: 28px;
 }
-.col-sm.col-md.col-lg.socrates img{
+.col-sm-3.col-md-3.col-lg-3.socrates img{
     height: 180px;
 }
-.col-sm.col-md.col-lg.socrates p {
+.col-sm-3.col-md-3.col-lg-3.socrates p {
     font-size: 14px;
 }
 .d-flex.flex-row.windows img {
@@ -254,8 +263,8 @@ a:hover {
 #editorial {
     width: 130px;
 }
-#bigger {
-    width: 130px;
+a.bigger:nth-child(3) {
+    font-size: 30px;
 }
 .col-sm-8.d-flex.flex-row.align-items-center.font-weight-light.text-center.pb-3.last-footer a{
     width: 100px;
@@ -273,3 +282,107 @@ a:hover {
 #hidden {
     display: none;
 }
+@media only screen and (min-width: 575.98px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) { 
+    .nav.nav-pills.nav-fill.font-weight-bold.border-bottom {
+        display: none;
+    }
+    #date {
+        display: none;
+    }
+    #hidden {
+        display: inline;
+        max-height: 80%;
+    }
+    #static {
+        display: none;
+    }
+    .row.nav-bar.text-white {
+        height: 60px;
+    }
+    .col-md-4.col-lg-4.col-sm-6.text-right.header-item{
+        height: 40px;
+        font-size: 14px;
+    }
+    #card-1 {
+       display: flex;
+       justify-content: center;
+       max-width: 40%;
+       margin-left: 230px;
+       margin-bottom: 30px;
+    }
+    .col-sm-8.d-flex.flex-row.align-items-center.font-weight-light.text-center{
+        display: block;
+    }
+    .page-header {
+        position: sticky;
+        top: 0;
+    }
+    .d-flex.flex-row.card-text {
+        width: 200px;
+    }
+    .row.two{
+        display: block;
+    }
+    .card-body.second div{
+        display: flex;
+        flex-direction: row;
+    }
+    #block {
+        display: flex;
+        flex-direction: column;
+    }
+    #block-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn.bg.text-white.rounded-0.last {
+        margin-left: 250px;
+    }
+    .row.footer {
+        display: block;
+    }
+
+}
+@media only screen and (max-width: 575.97px) and (-webkit-min-device-pixel-ratio: 1) {
+    .nav.nav-pills.nav-fill.font-weight-bold.border-bottom {
+        display: none;
+    }
+    #date {
+        display: none;
+    }
+    #hidden {
+        display: inline;
+        max-height: 80%;
+        max-width: 40%;
+    }
+    #static {
+        display: none;
+        width: 1%;
+    }
+    .row.nav-bar.text-white {
+        height: 60px;
+        display: inline,
+    }
+    .page-header {
+        position: sticky;
+        top: 0;
+    }
+    .col-md-4.col-lg-4.col-sm-6.text-right.header-item{
+        margin-top: 10px;
+        height: 40px;
+        font-size: 12px;
+        position: absolute;
+        top: 0;
+        margin-left: 32px;
+    }
+    .col-md-4.col-lg-4.col-sm-6.text-right.header-item button {
+        height: 80%;
+        width: 20%;
+        font-size: 8px;
+        margin-top: 5px;
+    }
+    .col-md-4.col-lg-4.col-sm-0.text-center {
+        width: 1%;
+    }
+    
+} 
