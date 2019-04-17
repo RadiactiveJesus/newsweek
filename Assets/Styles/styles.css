@@ -17,6 +17,9 @@ a:hover {
     color: black;
     cursor: pointer;
 }
+ul li a:hover {
+    color: #f72210;
+}
 #static{
     height: 90px;
 }
