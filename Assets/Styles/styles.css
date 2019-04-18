@@ -285,6 +285,9 @@ a.bigger:nth-child(3) {
 #hidden {
     display: none;
 }
+.d-flex.flex-row.align-items-center.font-weight-light.text-center {
+    height: 23px;
+}
 @media only screen and (min-width: 575.98px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) { 
     .nav.nav-pills.nav-fill.font-weight-bold.border-bottom {
         display: none;
