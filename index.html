@@ -5,46 +5,779 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="Assets/Styles/">
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/Styles/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Newsweek</title>
   </head>
-  <body>
-    <div class="container">
-        <div class="page-header">
-                <div class="row">
-                    <div class="col-md-4 col-lg-4 col-sm-4 text-left header-item">
-                        <p>Wed, Apr 10, 2019</p>
-                    </div>
-                    <div class="col-md-4 col-lg-4 col-sm-4 text-center">
-                        <img src="Assets/Media/logo.png" alt="NW-logo">
-                    </div>
-                    <div class="col-md-4 col-lg-4 col-sm-4 text-right header-item">
-                        <p>SIGN IN <button>SUBSCRIBE<i class="fas fa-chevron-right"></i></button></p>
-                    </div>
-                </div><!--end of header-->
-                <ul class="nav nav-pills nav-fill">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">U.S.</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">World</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Business</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Tech & Science</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Culture</a>
+    <body>
+        <div class="container-fluid">
+            <div class="page-header">
+                <div class="row nav-bar text-white ">
+                    <div class="col-md-4 col-lg-4 col-sm-6 text-left header-item">
+                        <p class="ml-4" id="date">Wed, Apr 10, 2019</p>
+                        <a id="hidden" href="#"><img class="hidden img-fluid max-width: 80%" src="Assets/Images/Newsweek-Logo.png" alt="NW-logo"></a>
+                    </div><!--end of column-->
+                    <div class="col-md-4 col-lg-4 col-sm-0 text-center">
+                        <a href="https://getbootstrap.com/"><img id="static" class="img-fluid max-width: 100%" src="Assets/Images/Newsweek-Logo.png" alt="NW-logo"></a>
+                    </div><!--end of column-->
+                    <div class="col-md-4 col-lg-4 col-sm-6 text-right header-item right">
+                        <a class="text-light text-decoration-none pr-2 mr-1" href="#">SIGN IN</a><button type="button" class="btn bg-white text-danger rounded-0 mr-3">SUBSCRIBE<i class="fas fa-chevron-right"></i></button>
+                    </div><!--end of column-->
+                </div><!--end of row-->
+                <ul class="nav nav-pills nav-fill font-weight-bold border-bottom">
+                    <li class="nav-item text-dark">
+                        <a id="red" class="nav-link border-right" href="#">U.S.</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border-right" href="#">World</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border-right" href="#">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border-right" href="#">Tech & Science</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border-right" href="#">Culture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border-right" href="#">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border-right" href="#">Health</a>
+                    </li>
+                        <li class="nav-item">
+                        <a class="nav-link border-right" href="#">Opinion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ndelible</a>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-link font-weight-light">Search<i class="fas fa-search pl-2 pr-5"></i></p>
+                    </li>
                 </ul>
-        </div> 
-    </div>  
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+            </div>
+            <div class="row pt-3">
+                <div class="col-md-6 col-lg-3 col-sm-6 text-left">
+                    <p class="text-muted">FEATURED STORIES</p>
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/socrates.jpg" alt="Socrates">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Socrates debating with Thrasymachus about the defnition of justice</h1></a>
+                    <p>Thrasymachus says that justice is the power of the strongest, but has little interest in explaining why, he rather prefers to ask innumerable question to Sacrates just to make him talk.</p>
+                    <hr>
+                    <a href="https://getbootstrap.com/"><h2 class="font-weight-bold">Q&A with Socrates</h2></a>
+                    <hr>
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/socrates.jpg" alt="Socrates">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Socrates debating with Thrasymachus about the defnition of justice</h1></a>
+                    <p>Thrasymachus says that justice is the power of the strongest, but has little interest in explaining why, he rather prefers to ask innumerable question to Sacrates just to make him talk.</p>
+                    <hr>
+                    <a href="https://getbootstrap.com/"><h2 class="font-weight-bold">This Is the First-Ever Image of a Black Hole</h2></a>
+                    <hr>
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/socrates.jpg" alt="Socrates">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Socrates debating with Thrasymachus about the defnition of justice</h1></a>
+                    <p>Thrasymachus says that justice is the power of the strongest, but has little interest in explaining why, he rather prefers to ask innumerable question to Sacrates just to make him talk.</p>
+                    <hr>
+                    <a href="https://getbootstrap.com/"><h2 class="font-weight-bold">Q&A with Socrates</h2></a>
+                    <hr>
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/socrates.jpg" alt="Socrates">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Socrates debating with Thrasymachus about the defnition of justice</h1></a>
+                    <p>Thrasymachus says that justice is the power of the strongest, but has little interest in explaining why, he rather prefers to ask innumerable question to Sacrates just to make him talk.</p>
+                    <hr>
+                    <a href="https://getbootstrap.com/"><h2 class="font-weight-bold">This Is the First-Ever Image of a Black Hole</h2></a>
+                    <hr>
+                </div><!--end of column-->
+                <div class="col-md-6 col-lg-6 col-sm-6 text-left">
+                    <p class="text-muted">TOP STORY</p>
+                    <img class="img-fluid max-width: 100%" id="Ideas" src="Assets/Images/Ideas.jpg" alt="Ideas">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">The dicotomy between the Ideas of Plato and the ground an experience from Aristotle</h1></a>
+                    <p>Aristotle as disciple of Plato defies him turning the importance of the knowledge and Epystemology the whole way around. For him the most important are not the static ideas, but the expierence of the senses.</p>
+                    <hr>
+                    <a href="https://getbootstrap.com/"><h2 class="font-weight-bold">Make America White Again?</h2></a>
+                    <hr>
+                    <p class="text-muted">MORE STORIES</p>
+                    <hr>
+                    <div class="d-flex flex-row align-items-center pb-3 pt-3">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/kant.jpg" alt="Immanuel Kant">
+                        <div class="kant pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Dare to think!</h1></a>
+                            <p> Dare to know! Have the courage to use your own intelligence!</p>
+                        </div>
+                    </div><!--end of Kant-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center pb-3 pt-3">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/kant.jpg" alt="Immanuel Kant">
+                        <div class="kant pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Dare to think!</h1></a>
+                            <p> Dare to know! Have the courage to use your own intelligence!</p>
+                        </div>
+                    </div><!--end of Kant-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center pb-3 pt-3">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/kant.jpg" alt="Immanuel Kant">
+                        <div class="kant pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Dare to think!</h1></a>
+                            <p> Dare to know! Have the courage to use your own intelligence!</p>
+                        </div>
+                    </div><!--end of Kant-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center pb-3 pt-3">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/kant.jpg" alt="Immanuel Kant">
+                        <div class="kant pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Dare to think!</h1></a>
+                            <p> Dare to know! Have the courage to use your own intelligence!</p>
+                        </div>
+                    </div><!--end of Kant-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center pb-3 pt-3">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/kant.jpg" alt="Immanuel Kant">
+                        <div class="kant pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Dare to think!</h1></a>
+                            <p> Dare to know! Have the courage to use your own intelligence!</p>
+                        </div>
+                    </div><!--end of Kant-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center pb-3 pt-3">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/kant.jpg" alt="Immanuel Kant">
+                        <div class="kant pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Dare to think!</h1></a>
+                            <p> Dare to know! Have the courage to use your own intelligence!</p>
+                        </div>
+                    </div><!--end of Kant-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center pb-3 pt-3">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/kant.jpg" alt="Immanuel Kant">
+                        <div class="kant pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Dare to think!</h1></a>
+                            <p> Dare to know! Have the courage to use your own intelligence!</p>
+                        </div>
+                    </div><!--end of Kant-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center pb-3 pt-3">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/kant.jpg" alt="Immanuel Kant">
+                        <div class="kant pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Dare to think!</h1></a>
+                            <p> Dare to know! Have the courage to use your own intelligence!</p>
+                        </div>
+                    </div><!--end of Kant-->
+                    <hr>
+                </div><!--end of column-->
+                <div class="col-md-0 col-lg-3 col-sm-0 text-left">
+                    <p class="text-muted">OPINION</p>
+                    <div class="d-flex flex-row align-items-center nietzsche">
+                        <img class="img-fluid max-width: 100% rounded-circle Nietzsche" src="Assets/Images/Nietzsche.gif" alt="Nietzsche">
+                        <div>
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">The Übermensch is the return to a child</h1></a>
+                            <p class="font-weight-bold">BY FRIEDRICH NIETZSCHE<p>
+                        </div>
+                    </div><!--end of Nietzsche-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center nietzsche">
+                        <img class="img-fluid max-width: 100% rounded-circle Nietzsche" src="Assets/Images/Nietzsche.gif" alt="Nietzsche">
+                        <div>
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">The Übermensch is the return to a child</h1></a>
+                            <p class="font-weight-bold">BY FRIEDRICH NIETZSCHE<p>
+                        </div>
+                    </div><!--end of Nietzsche-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center nietzsche">
+                        <img class="img-fluid max-width: 100% rounded-circle Nietzsche" src="Assets/Images/Nietzsche.gif" alt="Nietzsche">
+                        <div>
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">The Übermensch is the return to a child</h1></a>
+                            <p class="font-weight-bold">BY FRIEDRICH NIETZSCHE<p>
+                        </div>
+                    </div><!--end of Nietzsche-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center nietzsche">
+                        <img class="rounded-circle img-fluid max-width: 100% Nietzsche" src="Assets/Images/Nietzsche.gif" alt="Nietzsche">
+                        <div>
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">The Übermensch is the return to a child</h1></a>
+                            <p class="font-weight-bold">BY FRIEDRICH NIETZSCHE<p>
+                        </div>
+                    </div><!--end of Nietzsche-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center nietzsche">
+                        <img class="rounded-circle img-fluid Nietzsche max-width: 100% " src="Assets/Images/Nietzsche.gif" alt="Nietzsche">
+                        <div>
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">The Übermensch is the return to a child</h1></a>
+                            <p class="font-weight-bold">BY FRIEDRICH NIETZSCHE<p>
+                        </div>
+                    </div><!--end of Nietzsche-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center nietzsche">
+                        <img class="rounded-circle img-fluid Nietzsche max-width: 100% " src="Assets/Images/Nietzsche.gif" alt="Nietzsche">
+                        <div>
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">The Übermensch is the return to a child</h1></a>
+                            <p class="font-weight-bold">BY FRIEDRICH NIETZSCHE<p>
+                        </div>
+                    </div><!--end of Nietzsche-->
+                    <p class="text-muted mt-4">LATEST NEWS</p>
+                    <div class="d-flex flex-row align-items-center shakespeare">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/shakespeare.jpg" alt="Shakespeare">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">I'll join with black despair against my soul, and to myself become an enemy.</h1></a>
+                        </div>
+                    </div><!--end of Shakespeare-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center shakespeare">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/shakespeare.jpg" alt="Shakespeare">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">I'll join with black despair against my soul, and to myself become an enemy.</h1></a>
+                        </div>
+                    </div><!--end of Shakespeare-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center shakespeare">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/shakespeare.jpg" alt="Shakespeare">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">I'll join with black despair against my soul, and to myself become an enemy.</h1></a>
+                        </div>
+                    </div><!--end of Shakespeare-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center shakespeare">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/shakespeare.jpg" alt="Shakespeare">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">I'll join with black despair against my soul, and to myself become an enemy.</h1></a>
+                        </div>
+                    </div><!--end of Shakespeare-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center shakespeare">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/shakespeare.jpg" alt="Shakespeare">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">I'll join with black despair against my soul, and to myself become an enemy.</h1></a>
+                        </div>
+                    </div><!--end of Shakespeare-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center shakespeare">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/shakespeare.jpg" alt="Shakespeare">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">I'll join with black despair against my soul, and to myself become an enemy.</h1></a>
+                        </div>
+                    </div><!--end of Shakespeare-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center shakespeare">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/shakespeare.jpg" alt="Shakespeare">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">I'll join with black despair against my soul, and to myself become an enemy.</h1></a>
+                        </div>
+                    </div><!--end of Shakespeare-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center shakespeare">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/shakespeare.jpg" alt="Shakespeare">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">I'll join with black despair against my soul, and to myself become an enemy.</h1></a>
+                        </div>
+                    </div><!--end of Shakespeare-->
+                    <div id="card-1" class="card mt-5 rounded-0 max width: 100%;" style="width: 100%;">
+                        <div class="card-body">
+                            <div class="d-flex flex-row card-text">
+                                <img id="n-icon" class="mt-1 mr-2" src="https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/logo-n1.svg" alt="n-icon">
+                                <h5 class="card-title font-weight-bold">SIGN UP FOR OUR<br> NEWSLETTER</h5>
+                            </div>
+                            <button type="button" class="btn text-white rounded-0 mb-2 mr-2 font-weight-bold">SIGN UP<i class="fas fa-chevron-right"></i></button><br>
+                            <a href="#" class="font-weight-bold text-dark">Update your preferences »</a>
+                        </div>
+                    </div>
+                </div><!--end of column-->
+            </div><!--end of row pt-3-->
+            <div class="row">
+                <div class="col-md-3 col-lg-3 col-sm-3 magazine">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/bss.jpg" alt="Brain Science and Suicide">
+                    <div class="d-flex align-items-center w=100%">
+                        <p id="features" class="font-weight-bold justify-content-center">SEE ALL FEATURES<i class="fas fa-chevron-right"></i></p>
+                    </div>
+                </div><!--end of column-->
+                <div class="col-md-9 col-lg-9 col-sm-9">
+                    <div class="d-flex flex-row justify-content-center">
+                        <img class="n-icon" src="https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/logo-n1.svg" alt="n-icon">
+                        <p class="font-weight-bold mt-1 ml-2">IN THE MAGAZINE</p>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4 col-lg-4 magazine">
+                                <img class="img-fluid max-width: 100%" src="Assets/Images/1.jpg" alt="University">
+                                <div class="d-flex flex-row justify-content-start pt-2">
+                                    <a href="https://getbootstrap.com/"><span class="text-white font-weight-bold">Features</span></a>
+                                    <a href="https://getbootstrap.com/"><p class="pl-2">U.S.</p></a>
+                                </div>
+                                <a href="#"><h1 class="font-weight-bold text-dark">Ilhan Omar Is Changing the Conversation About Israel</h1></a>
+                            </div><!--end of column-->
+                            <div class="col-sm-4 col-md-4 col-lg-4 magazine">
+                                <img class="img-fluid max-width: 100%" src="Assets/Images/2.jpg" alt="Trump">
+                                <div class="d-flex flex-row justify-content-start pt-2">
+                                    <a href="https://getbootstrap.com/"><span class="text-white font-weight-bold">Features</span></a>
+                                    <a href="https://getbootstrap.com/"><p class="pl-2">U.S.</p></a>
+                                </div>
+                                <a href="#"><h1 class="font-weight-bold text-dark">Ilhan Omar Is Changing the Conversation About Israel</h1></a>
+                            </div><!--end of column-->
+                            <div class="col-sm-4 col-md-4 col-lg-4 magazine">
+                                <img class="img-fluid max-width: 100%" src="Assets/Images/3.jpg" alt="Politics">
+                                <div class="d-flex flex-row justify-content-start pt-2">
+                                    <a href="https://getbootstrap.com/"><span class="text-white font-weight-bold">Features</span></a>
+                                    <a href="https://getbootstrap.com/"><p class="pl-2">U.S.</p></a>
+                                </div>
+                                <a href="#"><h1 class="font-weight-bold text-dark">Ilhan Omar Is Changing the Conversation About Israel</h1></a>
+                            </div><!--end of column-->
+                        </div><!--end of row-->
+                    </div>
+                </div><!--end of column-->
+            </div><!--end of row-->
+            <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3 magazine">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/2.jpg" alt="Trump">
+                    <div class="d-flex flex-row justify-content-start pt-2">
+                        <a href="https://getbootstrap.com/"><span class="text-white font-weight-bold">Features</span></a>
+                        <a href="https://getbootstrap.com/"><p class="pl-2">U.S.</p></a>
+                    </div>
+                    <a href="#"><h1 class="font-weight-bold text-dark">Ilhan Omar Is Changing the Conversation About Israel</h1></a>
+                </div><!--end of column-->
+                <div class="col-sm-3 col-md-3 col-lg-3 magazine">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/2.jpg" alt="Trump">
+                    <div class="d-flex flex-row justify-content-start pt-2">
+                        <a href="https://getbootstrap.com/"><span class="text-white font-weight-bold">Features</span></a>
+                        <a href="https://getbootstrap.com/"><p class="pl-2">U.S.</p></a>
+                    </div>
+                    <a href="#"><h1 class="font-weight-bold text-dark">Ilhan Omar Is Changing the Conversation About Israel</h1></a>
+                </div><!--end of column-->
+                <div class="col-sm-3 col-md-3 col-lg-3 magazine">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/2.jpg" alt="Trump">
+                    <div class="d-flex flex-row justify-content-start pt-2">
+                        <a href="https://getbootstrap.com/"><span class="text-white font-weight-bold">Features</span></a>
+                        <a href="https://getbootstrap.com/"><p class="pl-2">U.S.</p></a>
+                    </div>
+                    <a href="#"><h1 class="font-weight-bold text-dark">Ilhan Omar Is Changing the Conversation About Israel</h1></a>
+                </div><!--end of column-->
+                <div class="col-sm-3 col-md-3 col-lg-3 magazine">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/2.jpg" alt="Trump">
+                    <div class="d-flex flex-row justify-content-start pt-2">
+                        <a href="https://getbootstrap.com/"><span class="text-white font-weight-bold">Features</span></a>
+                        <a href="https://getbootstrap.com/"><p class="pl-2">U.S.</p></a>
+                    </div>
+                    <a href="#"><h1 class="font-weight-bold text-dark">Ilhan Omar Is Changing the Conversation About Israel</h1></a>
+                </div><!--end of column-->
+            </div><!--end of row-->
+            <div class="d-flex flex-row justify-content-center mt-3">
+                <img class="n-icon" src="https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/logo-n1.svg" alt="n-icon">
+                <p class="font-weight-bold mt-1 ml-2">EDITOR'S PICK</p>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3 socrates">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/socrates.jpg" alt="Socrates">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Socrates debating with Thrasymachus about the defnition of justice</h1></a>
+                    <p>Thrasymachus says that justice is the power of the strongest, but has little interest in explaining why, he rather prefers to ask innumerable question to Sacrates just to make him talk.</p>
+                </div><!--end of column-->
+                <div class="col-sm-3 col-md-3 col-lg-3 socrates">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/socrates.jpg" alt="Socrates">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Socrates debating with Thrasymachus about the defnition of justice</h1></a>
+                    <p>Thrasymachus says that justice is the power of the strongest, but has little interest in explaining why, he rather prefers to ask innumerable question to Sacrates just to make him talk.</p>
+                </div><!--end of column-->
+                <div class="col-sm-3 col-md-3 col-lg-3 socrates">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/socrates.jpg" alt="Socrates">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Socrates debating with Thrasymachus about the defnition of justice</h1></a>
+                    <p>Thrasymachus says that justice is the power of the strongest, but has little interest in explaining why, he rather prefers to ask innumerable question to Sacrates just to make him talk.</p>
+                </div><!--end of column-->
+                <div class="col-sm-3 col-md-3 col-lg-3 socrates">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/socrates.jpg" alt="Socrates">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Socrates debating with Thrasymachus about the defnition of justice</h1></a>
+                    <p>Thrasymachus says that justice is the power of the strongest, but has little interest in explaining why, he rather prefers to ask innumerable question to Sacrates just to make him talk.</p>
+                </div><!--end of column-->
+            </div><!--end of row-->
+            <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3 socrates">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/socrates.jpg" alt="Socrates">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Socrates debating with Thrasymachus about the defnition of justice</h1></a>
+                    <p>Thrasymachus says that justice is the power of the strongest, but has little interest in explaining why, he rather prefers to ask innumerable question to Sacrates just to make him talk.</p>
+                </div><!--end of column-->
+                <div class="col-sm-3 col-md-3 col-lg-3 socrates">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/socrates.jpg" alt="Socrates">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Socrates debating with Thrasymachus about the defnition of justice</h1></a>
+                    <p>Thrasymachus says that justice is the power of the strongest, but has little interest in explaining why, he rather prefers to ask innumerable question to Sacrates just to make him talk.</p>
+                </div><!--end of column-->
+                <div class="col-sm-3 col-md-3 col-lg-3 socrates">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/socrates.jpg" alt="Socrates">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Socrates debating with Thrasymachus about the defnition of justice</h1></a>
+                    <p>Thrasymachus says that justice is the power of the strongest, but has little interest in explaining why, he rather prefers to ask innumerable question to Sacrates just to make him talk.</p>
+                </div><!--end of column-->
+                <div class="col-sm-3 col-md-3 col-lg-3 socrates">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/socrates.jpg" alt="Socrates">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Socrates debating with Thrasymachus about the defnition of justice</h1></a>
+                    <p>Thrasymachus says that justice is the power of the strongest, but has little interest in explaining why, he rather prefers to ask innumerable question to Sacrates just to make him talk.</p>
+                </div><!--end of column-->
+            </div><!--end of row-->
+            <div class="d-flex flex-row justify-content-center mt-3">
+                <img class="n-icon" src="https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/logo-n1.svg" alt="n-icon">
+                <p class="font-weight-bold mt-1 ml-2">FEATURED SLIDESHOWS</p>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm col-md col-lg">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/god-save-the-queen.jpg" alt="Sex Pistols">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2 pb-4">Nevermind the Picassos: '70s Punk Gets Its Due with New Design Exhibit in New York</h1></a>
+                </div><!--end of column-->
+                <div class="col-sm col-md col-lg">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/god-save-the-queen.jpg" alt="Sex Pistols">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2 pb-4">Nevermind the Picassos: '70s Punk Gets Its Due with New Design Exhibit in New York</h1></a>
+                </div><!--end of column-->
+                <div class="col-sm col-md col-lg">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/god-save-the-queen.jpg" alt="Sex Pistols">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2 pb-4">Nevermind the Picassos: '70s Punk Gets Its Due with New Design Exhibit in New York</h1></a>
+                </div><!--end of column-->
+            </div><!--end of row-->
+            <div class="row">
+                <div class="col-sm col-md col-lg">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/god-save-the-queen.jpg" alt="Sex Pistols">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2 pb-4">Nevermind the Picassos: '70s Punk Gets Its Due with New Design Exhibit in New York</h1></a>
+                </div><!--end of column-->
+                <div class="col-sm col-md col-lg">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/god-save-the-queen.jpg" alt="Sex Pistols">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2 pb-4">Nevermind the Picassos: '70s Punk Gets Its Due with New Design Exhibit in New York</h1></a>
+                </div><!--end of column-->
+                <div class="col-sm col-md col-lg">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/god-save-the-queen.jpg" alt="Sex Pistols">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2 pb-4">Nevermind the Picassos: '70s Punk Gets Its Due with New Design Exhibit in New York</h1></a>
+                </div><!--end of column-->
+            </div><!--end of row-->
+            <hr>
+            <div class="row">
+                <div class="col-sm col-md col-lg">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2 U-S">U.S.</h1></a>
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/windows-xp.jpg" alt="Windows XP">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Windows XP in 2019</h1></a>
+                </div><!--end of column-->
+                <div class="col-sm col-md col-lg">
+                    <h1 class="font-weight-bold pt-2 text-white">U.S.</h1>
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/monkey.jpg" alt="Monkey">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Windows XP in 2019</h1></a>
+                </div><!--end of column-->
+                <div class="col-sm col-md col-lg">
+                    <h1 class="font-weight-bold pt-2 text-white">U.S.</h1>
+                    <div class="d-flex flex-row windows">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/windows-xp.jpg" alt="Windows XP">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Windows XP in 2019</h1></a>
+                        </div>
+                    </div><!--end of Windows-->
+                    <hr>
+                    <div class="d-flex flex-row windows">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/monkey.jpg" alt="Monkey">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Windows XP in 2019</h1></a>
+                        </div>
+                    </div><!--end of Windows-->
+                    <hr>
+                    <div class="d-flex flex-row windows">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/windows-xp.jpg" alt="Windows XP">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Windows XP in 2019</h1></a>
+                        </div>
+                    </div><!--end of Windows-->
+                </div><!--end of column-->
+            </div><!--end of row-->
+            <hr>
+            <div class="row">
+                <div class="col-sm col-md col-lg">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2 U-S">World</h1></a>
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/monkey.jpg" alt="Monkey">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Windows XP in 2019</h1></a>
+                </div><!--end of column-->
+                <div class="col-sm col-md col-lg">
+                    <h1 class="font-weight-bold pt-2 text-white">U.S.</h1>
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/windows-xp.jpg" alt="Windows XP">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Windows XP in 2019</h1></a>
+                </div><!--end of column-->
+                <div class="col-sm col-md col-lg">
+                    <h1 class="font-weight-bold pt-2 text-white">U.S.</h1>
+                    <div class="d-flex flex-row windows">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/monkey.jpg" alt="Monkey">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Windows XP in 2019</h1></a>
+                        </div>
+                    </div><!--end of Windows-->
+                    <hr>
+                    <div class="d-flex flex-row windows">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/windows-xp.jpg" alt="Windows XP">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Windows XP in 2019</h1></a>
+                        </div>
+                    </div><!--end of Windows-->
+                    <hr>
+                    <div class="d-flex flex-row windows">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/monkey.jpg" alt="Monkey">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Windows XP in 2019</h1></a>
+                        </div>
+                    </div><!--end of Windows-->
+                </div><!--end of column-->
+            </div><!--end of row-->
+            <hr>
+            <div class="row">
+                <div class="col-sm col-md col-lg">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2 U-S">Business</h1></a>
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/windows-xp.jpg" alt="Windows XP">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Windows XP in 2019</h1></a>
+                </div><!--end of column-->
+                <div class="col-sm col-md col-lg">
+                    <h1 class="font-weight-bold pt-2 text-white">U.S.</h1>
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/monkey.jpg" alt="Monkey">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Windows XP in 2019</h1></a>
+                </div><!--end of column-->
+                <div class="col-sm col-md col-lg">
+                    <h1 class="font-weight-bold pt-2 text-white">U.S.</h1>
+                    <div class="d-flex flex-row windows">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/windows-xp.jpg" alt="Windows XP">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Windows XP in 2019</h1></a>
+                        </div>
+                    </div><!--end of Windows-->
+                    <hr>
+                    <div class="d-flex flex-row windows">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/monkey.jpg" alt="Monkey">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Windows XP in 2019</h1></a>
+                        </div>
+                    </div><!--end of Windows-->
+                    <hr>
+                    <div class="d-flex flex-row windows">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/windows-xp.jpg" alt="Windows XP">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Windows XP in 2019</h1></a>
+                        </div>
+                    </div><!--end of Windows-->
+                </div><!--end of column-->
+            </div><!--end of row-->
+            <hr>
+            <div class="row">
+                <div class="col-sm col-md col-lg">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2 U-S">Tech & Science</h1></a>
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/monkey.jpg" alt="Monkey">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Windows XP in 2019</h1></a>
+                </div><!--end of column-->
+                <div class="col-sm col-md col-lg">
+                    <h1 class="font-weight-bold pt-2 text-white">U.S.</h1>
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/windows-xp.jpg" alt="Windows XP">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Windows XP in 2019</h1></a>
+                </div><!--end of column-->
+                <div class="col-sm col-md col-lg">
+                    <h1 class="font-weight-bold pt-2 text-white">U.S.</h1>
+                    <div class="d-flex flex-row windows">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/monkey.jpg" alt="Monkey">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Windows XP in 2019</h1></a>
+                        </div>
+                    </div><!--end of Windows-->
+                    <hr>
+                    <div class="d-flex flex-row windows">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/windows-xp.jpg" alt="Windows XP">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Windows XP in 2019</h1></a>
+                        </div>
+                    </div><!--end of Windows-->
+                    <hr>
+                    <div class="d-flex flex-row windows">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/monkey.jpg" alt="Monkey">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Windows XP in 2019</h1></a>
+                        </div>
+                    </div><!--end of Windows-->
+                </div><!--end of column-->
+            </div><!--end of row-->
+            <hr>
+            <div class="row">
+                <div class="col-sm col-md col-lg">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2 U-S">Culture</h1></a>
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/windows-xp.jpg" alt="Windows XP">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Windows XP in 2019</h1></a>
+                </div><!--end of column-->
+                <div class="col-sm col-md col-lg">
+                    <h1 class="font-weight-bold pt-2 text-white">U.S.</h1>
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/monkey.jpg" alt="Monkey">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Windows XP in 2019</h1></a>
+                </div><!--end of column-->
+                <div class="col-sm col-md col-lg">
+                    <h1 class="font-weight-bold pt-2 text-white">U.S.</h1>
+                    <div class="d-flex flex-row windows">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/windows-xp.jpg" alt="Windows XP">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Windows XP in 2019</h1></a>
+                        </div>
+                    </div><!--end of Windows-->
+                    <hr>
+                    <div class="d-flex flex-row windows">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/monkey.jpg" alt="Monkey">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Windows XP in 2019</h1></a>
+                        </div>
+                    </div><!--end of Windows-->
+                    <hr>
+                    <div class="d-flex flex-row windows">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/windows-xp.jpg" alt="Windows XP">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Windows XP in 2019</h1></a>
+                        </div>
+                    </div><!--end of Windows-->
+                </div><!--end of column-->
+            </div><!--end of row-->
+            <div class="row">
+                <div class="col-sm col-md col-lg">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2 U-S">Sports</h1></a>
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/monkey.jpg" alt="Monkey">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Windows XP in 2019</h1></a>
+                </div><!--end of column-->
+                <div class="col-sm col-md col-lg">
+                    <h1 class="font-weight-bold pt-2 text-white">U.S.</h1>
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/windows-xp.jpg" alt="Windows XP">
+                    <a href="https://getbootstrap.com/"><h1 class="font-weight-bold pt-2">Windows XP in 2019</h1></a>
+                </div><!--end of column-->
+                <div class="col-sm col-md col-lg">
+                    <h1 class="font-weight-bold pt-2 text-white">U.S.</h1>
+                    <div class="d-flex flex-row windows">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/monkey.jpg" alt="Monkey">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Windows XP in 2019</h1></a>
+                        </div>
+                    </div><!--end of Windows-->
+                    <hr>
+                    <div class="d-flex flex-row windows">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/windows-xp.jpg" alt="Windows XP">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Windows XP in 2019</h1></a>
+                        </div>
+                    </div><!--end of Windows-->
+                    <hr>
+                    <div class="d-flex flex-row windows">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/monkey.jpg" alt="Monkey">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">Windows XP in 2019</h1></a>
+                        </div>
+                    </div><!--end of Windows-->
+                </div><!--end of column-->
+            </div><!--end of row-->
+            <div class="row two mt-5">
+                <div class="col-sm col-md col-lg-4">
+                    <h1 class="font-weight-bold pt-2 subscribe">SUBSCRIBE</h1>
+                    <div class="card second">
+                        <div class="card-body second">
+                            <div>
+                                <div class="d-flex flex-row card-second">
+                                    <img class="img-fluid max-width: 100%" src="Assets/Images/card-1.png" alt="Package 1">
+                                    <div id="block" class="inline ml-4">
+                                        <h5 class="font-weight-bold card-title second">Digital Only</h5>
+                                        <p class="card-text second"><i class="fas fa-check mx-2"></i>Free access to 40+ digital editions</p>
+                                        <p class="card-text second"><i class="fas fa-check mx-2"></i>Website access</p>
+                                        <p class="card-text second"><i class="fas fa-check mx-2"></i>Daily Newsletter</p>
+                                    </div><!--end of inline-->
+                                </div>
+                                <hr>
+                                <div class="d-flex flex-row card-second">
+                                    <img id="card-2" class="img-fluid max-width: 100%" src="Assets/Images/card-2.png" alt="Package 1">
+                                    <div id="block-2" class="inline ml-4">
+                                        <h5 class="font-weight-bold card-title second">Print & Digital</h5>
+                                        <p class="card-text second"><i class="fas fa-check mx-2"></i>Weekly magazine, delivered</p>
+                                        <p class="card-text second"><i class="fas fa-check mx-2"></i>Daily Newsletter</p>
+                                        <p class="card-text second"><i class="fas fa-check mx-2"></i>Website access</p>
+                                    </div><!--end of inline-->
+                                </div>
+                            </div>
+                            <button type="button" class="btn bg text-white rounded-0 last">SUBSCRIBE<i class="fas fa-chevron-right"></i></button>
+                        </div><!--end of card-body-->
+                    </div><!--end of card-->
+                </div><!--end of column-->
+                <div class="col-sm col-md col-lg-4"></div><!--end of column-->
+                <div class="col-sm col-md col-lg-4 third">
+                    <h1 class="font-weight-bold text-black pt-2">MOST READ</h1>
+                    <hr>
+                    <div class="d-flex flex-row align-items-center shakespeare-2">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/shakespeare.jpg" alt="Shakespeare">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">'Game of Thrones' Crashes HBO Go, HBO Now?</h1></a>
+                        </div>
+                    </div><!--end of Shakespeare-2-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center shakespeare-2">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/shakespeare.jpg" alt="Shakespeare">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">'Game of Thrones' Crashes HBO Go, HBO Now?</h1></a>
+                        </div>
+                    </div><!--end of Shakespeare-2-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center shakespeare-2">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/shakespeare.jpg" alt="Shakespeare">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">'Game of Thrones' Crashes HBO Go, HBO Now?</h1></a>
+                        </div>
+                    </div><!--end of Shakespeare-2-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center shakespeare-2">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/shakespeare.jpg" alt="Shakespeare">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">'Game of Thrones' Crashes HBO Go, HBO Now?</h1></a>
+                        </div>
+                    </div><!--end of Shakespeare-2-->
+                    <hr>
+                    <div class="d-flex flex-row align-items-center shakespeare-2">
+                        <img class="img-fluid max-width: 100%" src="Assets/Images/shakespeare.jpg" alt="Shakespeare">
+                        <div class="shakespeare pl-3">
+                            <a href="https://getbootstrap.com/"><h1 class="font-weight-bold">'Game of Thrones' Crashes HBO Go, HBO Now?</h1></a>
+                        </div>
+                    </div><!--end of Shakespeare-->
+                </div><!--end of column-->
+            </div><!--end of row-->
+            <hr>
+            <div class="d-flex flex-row align-items-center footer justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                    <img class="img-fluid max-width: 100%" src="Assets/Images/newsweek.jpg" alt="Newsweek logo">
+                    <p class="mt-4 pt-2 ml-3">© 2019 NEWSWEEK</p>
+                </div>
+                <div class="d-flex flex-row align-items-center footer">
+                    <a href="https://getbootstrap.com/"><i class="fab fa-facebook-square mx-2"></i></a>
+                    <a href="https://getbootstrap.com/"><i class="fab fa-twitter mx-2"></i></a>
+                    <a href="https://getbootstrap.com/"><i class="fab fa-google-plus-g mx-2"></i></a>
+                    <a href="https://getbootstrap.com/"><i class="fab fa-instagram mx-2"></i></a>
+                    <a href="https://getbootstrap.com/"><i class="fab fa-tumblr mx-2"></i></a>
+                    <a href="https://getbootstrap.com/"><i class="fab fa-linkedin-in mx-2"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="row footer">
+                <div class="col-sm-8 d-flex flex-row align-items-center font-weight-light text-center max-width: 100%">
+                    <div class="d-flex flex-row align-items-center font-weight-light text-left max-width: 100%">
+                        <a class="nav-link text-dark border-right" href="#">About Us</a>
+                        <a class="nav-link text-dark border-right" href="#">Corrections</a>
+                        <a class="nav-link text-dark border-right" href="#">Contact Us</a>
+                        <a id="editorial" class="nav-link text-dark border-right" href="#">Editorial Guidelines</a>
+                    </div>
+                    <div class="d-flex flex-row align-items-center font-weight-light text-center max-width: 100%">
+                        <a class="nav-link text-dark border-right" href="#">Advertise</a>
+                        <a class="nav-link text-dark border-right" href="#">Copyright</a>
+                        <a class="nav-link text-dark border-right bigger" href="#">Terms & Conditions</a>
+                        </div>
+                </div>
+                <div class="col-sm-4 d-flex flex-row align-items-center font-weight-light text-center pt-3 max-width: 100%">
+                    <p class="font-weight-bold text-muted">Editions:</p>
+                    <a class="nav-link text-dark border-right mb-4 mx-2 pr-3" href="#">U.S. Edition</a>
+                    <a class="nav-link text-dark border-right mb-4 mx-2 pr-3" href="#">Middle East</a>
+                    <a class="nav-link text-dark border-right mb-4 mx-2 pr-3" href="#">日本</a>
+                    <a class="nav-link text-dark border-right mb-4 mx-2 pr-3" href="#">한국</a>
+                </div>
+            </div>
+            <div class="row footer">
+                <div class="col-sm-8 d-flex flex-row align-items-center font-weight-light text-center last-footer max-width: 100%">
+                    <a class="nav-link text-dark border-right" href="#">Privacy Policy</a>
+                    <a class="nav-link text-dark border-right" href="#">Cookie Policy</a>
+                    <a class="nav-link text-dark border-right" href="#">Terms of Sale</a>
+                    <a id="smaller" class="nav-link text-dark border-right" href="#">Archive</a>
+                    <a class="nav-link text-dark border-right bigger" href="#">Announcements</a>
+                    <a id="biggest" class="nav-link text-dark border-right" href="#">Consent preferences</a>
+                </div>
+                <div class="col-sm-4 d-flex flex-row align-items-center font-weight-light text-center last-footer pt-3 max-width: 100%">
+                    <a class="nav-link text-dark border-right mb-4 mx-2 pr-3" href="#">Pakistan</a>
+                    <a class="nav-link text-dark border-right mb-4 mx-2 pr-3" href="#">Polska</a>
+                    <a class="nav-link text-dark border-right mb-4 mx-2 pr-3" href="#">România</a>
+                </div>
+            </div>
+        </div><!--end of container-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="Assets/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
 </html>
